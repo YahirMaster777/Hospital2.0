@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import loginView from '@/components/login.vue'
 import registerUser from '@/components/registerUser.vue'
 import dashboard from '@/components/dashboard.vue'
-import registrarUsuarios from '@/components/registrarUsuarios.'
+import registrarUsuarios from '@/components/registrarUsuarios.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -28,9 +28,6 @@ const router = createRouter({
       name: 'registrarUsuarios',
       component: registrarUsuarios
     }
-
-
-
   ]
 })
 
