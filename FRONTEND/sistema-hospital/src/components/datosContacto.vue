@@ -1,22 +1,22 @@
 <template>
     <div>
-                <label for="nombrePadre" class="block mb-2">Nombre del Padre:</label>
-                <input type="text" id="nombrePadre" v-model="nombrePadre" class="w-full rounded-md py-2 px-3 bg-gray-800 text-white">
+                <label for="nombrePadre" class="block mb-2 text-gray-700">Nombre del Padre:</label>
+                <input type="text" id="nombrePadre" v-model="nombrePadre" class="w-full rounded-md py-2 px-3 BG-WHITE text-gray-600">
             </div>
 
             <div>
-                <label for="nombreMadre" class="block mb-2">Nombre de la Madre:</label>
-                <input type="text" id="nombreMadre" v-model="nombreMadre" class="w-full rounded-md py-2 px-3 bg-gray-800 text-white">
+                <label for="nombreMadre" class="block mb-2 text-gray-700">Nombre de la Madre:</label>
+                <input type="text" id="nombreMadre" v-model="nombreMadre" class="w-full rounded-md py-2 px-3 BG-WHITE text-gray-600">
             </div>
 
             <div>
-                <label for="telefonoContacto" class="block mb-2">Teléfono de Contacto:</label>
-                <input type="text" id="telefonoContacto" v-model="telefonoContacto" class="w-full rounded-md py-2 px-3 bg-gray-800 text-white">
+                <label for="telefonoContacto" class="block mb-2 text-gray-700">Teléfono de Contacto:</label>
+                <input type="text" id="telefonoContacto" v-model="telefonoContacto" class="w-full rounded-md py-2 px-3 BG-WHITE text-gray-600">
             </div>
 
-            <div>
-                <label for="emailContacto" class="block mb-2">Email de Contacto:</label>
-                <input type="email" id="emailContacto" v-model="emailContacto" class="w-full rounded-md py-2 px-3 bg-gray-800 text-white">
+            <div class="mb-3">
+                <label for="emailContacto" class="block mb-2 text-gray-700">Email de Contacto:</label>
+                <input type="email" id="emailContacto" v-model="emailContacto" class="w-full rounded-md py-2 px-3 BG-WHITE text-gray-600">
             </div>
 </template>
 

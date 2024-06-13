@@ -1,26 +1,25 @@
 <template>
     <div>
-                <label for="sexo" class="block mb-2">Sexo:</label>
-                <select id="sexo" v-model="sexo" required class="w-full rounded-md py-2 px-3 bg-gray-800 text-white">
+                <label for="sexo" class="block mb-2 text-gray-700">Sexo:</label>
+                <select id="sexo" v-model="sexo" required class="w-full rounded-md py-2 px-3 bg-white text-gray-500">
                     <option value="">Seleccionar</option>
                     <option value="Masculino">Masculino</option>
                     <option value="Femenino">Femenino</option>
                 </select>
             </div>
-
             <div>
-                <label for="fechaNacimiento" class="block mb-2">Fecha de Nacimiento:</label>
-                <input type="date" id="fechaNacimiento" v-model="fechaNacimiento" class="w-full rounded-md py-2 px-3 bg-gray-800 text-white">
+                <label for="fechaNacimiento" class="block mb-2 text-gray-700">Fecha de Nacimiento:</label>
+                <input type="date" id="fechaNacimiento" v-model="fechaNacimiento" class="w-full rounded-md py-2 px-3 bg-white text-gray-500">
             </div>
 
             <div>
-                <label for="horaNacimiento" class="block mb-2">Hora de Nacimiento:</label>
-                <input type="time" id="horaNacimiento" v-model="horaNacimiento" class="w-full rounded-md py-2 px-3 bg-gray-800 text-white">
+                <label for="horaNacimiento" class="block mb-2 text-gray-700">Hora de Nacimiento:</label>
+                <input type="time" id="horaNacimiento" v-model="horaNacimiento" class="w-full rounded-md py-2 px-3 bg-white text-gray-500">
             </div>
 
             <div>
-                <label for="lugarNacimiento" class="block mb-2">Lugar de Nacimiento:</label>
-                <select id="lugarNacimiento" v-model="lugarNacimiento" class="w-full rounded-md py-2 px-3 bg-gray-800 text-white">
+                <label for="lugarNacimiento" class="block mb-2 text-gray-700">Lugar de Nacimiento:</label>
+                <select id="lugarNacimiento" v-model="lugarNacimiento" class="w-full rounded-md py-2 px-3 bg-white text-gray-500">
                     <option value="">Seleccionar</option>
                     <option value="Xicotepec">Xicotepec</option>
                     <option value="Huachinango">Huachinango</option>
@@ -30,13 +29,13 @@
             </div>
 
             <div>
-                <label for="peso" class="block mb-2">Peso (kg):</label>
-                <input type="number" id="peso" v-model="peso" step="0.01" class="w-full rounded-md py-2 px-3 bg-gray-800 text-white">
+                <label for="peso" class="block mb-2 text-gray-700">Peso (kg):</label>
+                <input type="number" id="peso" v-model="peso" step="0.01" class="w-full rounded-md py-2 px-3 bg-white text-gray-500">
             </div>
 
-            <div>
-                <label for="longitud" class="block mb-2">Longitud (cm):</label>
-                <input type="number" id="longitud" v-model="longitud" step="0.01" class="w-full rounded-md py-2 px-3 bg-gray-800 text-white">
+            <div class="mb-3">
+                <label for="longitud" class="block mb-2 text-gray-700">Longitud (cm):</label>
+                <input type="number" id="longitud" v-model="longitud" step="0.01" class="w-full rounded-md py-2 px-3 bg-white text-gray-500">
             </div>
 
 </template>

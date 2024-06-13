@@ -1,12 +1,9 @@
 <template>
- <div>
-                <label for="observaciones" class="block mb-2">Observaciones:</label>
-                <textarea id="observaciones" v-model="observaciones" class="w-full rounded-md py-2 px-3 bg-gray-800 text-white"></textarea>
-            </div>
+
 
             <div>
                 <label for="tipoNacimiento" class="block mb-2">Tipo de Nacimiento:</label>
-                <select id="tipoNacimiento" v-model="tipoNacimiento" class="w-full rounded-md py-2 px-3 bg-gray-800 text-white">
+                <select id="tipoNacimiento" v-model="tipoNacimiento" class="w-full rounded-md py-2 px-3 bg-white text-white">
                     <option value="1">Normal</option>
                     <option value="0">Cesárea</option>
                 </select>
@@ -14,22 +11,26 @@
 
             <div>
                 <label for="frecuenciaCardiaca" class="block mb-2">Frecuencia Cardíaca:</label>
-                <input type="number" id="frecuenciaCardiaca" v-model="frecuenciaCardiaca" class="w-full rounded-md py-2 px-3 bg-gray-800 text-white">
+                <input type="number" id="frecuenciaCardiaca" v-model="frecuenciaCardiaca" class="w-full rounded-md py-2 px-3 bg-white text-white">
             </div>
 
             <div>
                 <label for="temperatura" class="block mb-2">Temperatura (°C):</label>
-                <input type="number" id="temperatura" v-model="temperatura" step="0.01" class="w-full rounded-md py-2 px-3 bg-gray-800 text-white">
+                <input type="number" id="temperatura" v-model="temperatura" step="0.01" class="w-full rounded-md py-2 px-3 bg-white text-white">
             </div>
 
             <div>
                 <label for="presionArterialSistolica" class="block mb-2">Presión Arterial Sistólica:</label>
-                <input type="number" id="presionArterialSistolica" v-model="presionArterialSistolica" class="w-full rounded-md py-2 px-3 bg-gray-800 text-white">
+                <input type="number" id="presionArterialSistolica" v-model="presionArterialSistolica" class="w-full rounded-md py-2 px-3 bg-white text-white">
             </div>
 
-            <div>
+            <div class="mb-3">
                 <label for="presionArterialDiastolica" class="block mb-2">Presión Arterial Diastólica:</label>
-                <input type="number" id="presionArterialDiastolica" v-model="presionArterialDiastolica" class="w-full rounded-md py-2 px-3 bg-gray-800 text-white">
+                <input type="number" id="presionArterialDiastolica" v-model="presionArterialDiastolica" class="w-full rounded-md py-2 px-3 bg-white text-white">
+            </div>
+             <div>
+                <label for="observaciones" class="block mb-2">Observaciones:</label>
+                <textarea id="observaciones" v-model="observaciones" class="w-full rounded-md py-2 px-3 bg-white text-white"></textarea>
             </div>
 
 </template>

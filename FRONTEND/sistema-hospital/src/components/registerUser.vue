@@ -1,17 +1,17 @@
 <template>
 
-  <div class="flex justify-center items-center h-screen bg-indigo-700">
-    <div class="w-full bg-indigo-100 rounded p-5" style="max-width: 50rem;">
+  <div class="flex justify-center items-center h-screen bg-gray-700">
+    <div class="w-full bg-gray-100 rounded p-5" style="max-width: 50rem;">
       <!-- Pestañas -->
       <div class="flex mb-4">
         <button @click="mostrarPaso(1)"
-          :class="{ 'bg-indigo-700 text-white': pasoActivo === 1, 'bg-gray-300': pasoActivo !== 1 }"
+          :class="{ 'bg-pink-700 text-white p-3': pasoActivo === 1, 'bg-gray-300': pasoActivo !== 1 }"
           class="w-1/3 py-2 rounded-tl-lg focus:outline-none">Paso 1</button>
         <button @click="mostrarPaso(2)"
-          :class="{ 'bg-indigo-700 text-white': pasoActivo === 2, 'bg-gray-300': pasoActivo !== 2 }"
+          :class="{ 'bg-pink-700 text-white': pasoActivo === 2, 'bg-gray-300': pasoActivo !== 2 }"
           class="w-1/3 py-2 focus:outline-none">Paso 2</button>
         <button @click="mostrarPaso(3)"
-          :class="{ 'bg-indigo-700 text-white': pasoActivo === 3, 'bg-gray-300': pasoActivo !== 3 }"
+          :class="{ 'bg-pink-700 text-white': pasoActivo === 3, 'bg-gray-300': pasoActivo !== 3 }"
           class="w-1/3 py-2 rounded-tr-lg focus:outline-none">Paso 3</button>
       </div>
       <!-- Contenido del paso -->
@@ -26,25 +26,22 @@
           <form-paso-3 />
         </div>
       </div>
-
-      <button @click="anteriorPaso" v-if="pasoActivo > 1" class="w-1/2 bg-gray-700 hover:bg-pink-700 text-white font-bold py-2 px-4 mb-6 rounded float-left">
+        <div >
+      <button @click="anteriorPaso" v-if="pasoActivo > 1" class="w-1/2 w-5/12 bg-gray-700 p-2 hover:bg-pink-700 text-white font-bold mb-6 rounded ">
         Anterior
       </button>
-      <button @click="siguientePaso" v-if="pasoActivo < 3" class="w-1/2 bg-indigo-700 hover:bg-pink-700 text-white font-bold py-2 px-4 mb-6 rounded float-right">
+      <button @click="siguientePaso" v-if="pasoActivo < 3" class="w-1/2  w-5/12 bg-gray-700 p-2 hover:bg-pink-700 text-white font-bold mb-6 rounded float-right">
         Siguiente
       </button>
-      <button @click="enviarFormulario" v-if="pasoActivo === 3" class="w-full bg-indigo-700 hover:bg-pink-700 text-white font-bold py-2 px-4 mb-6 rounded">
+      <button @click="enviarFormulario" v-if="pasoActivo === 3" class="w-1/2 w-5/12 bg-gray-700 p-2 hover:bg-green-700 text-white font-bold mb-6  rounded float-right">
         Registrar usuario
       </button>
+      </div>
 
-      <footer>
-        <a class="text-indigo-700 hover:text-pink-700 text-sm float-left" href="#">¿Olvidaste la contraseña?</a>
-        <RouterLink to="/login">
-          <a class="text-indigo-700 hover:text-pink-700 text-sm float-right" href="#">Regresar</a>
-        </RouterLink>
-      </footer>
+     
     </div>
   </div>
+  
 </template>
 
 <script>
