@@ -1,1 +1,7 @@
-print("Bienvenido a mi aplicacion")
+from fastapi import FastAPI
+
+app = FastAPI()
+
+
+
+print("Bienvenido a mi aplicacion")                                  
