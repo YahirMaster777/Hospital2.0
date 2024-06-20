@@ -5,6 +5,4 @@ app = FastAPI()
 app.include_router(persona)
     
 
-
-
-print("Bienvenido a mi aplicacion")                                  
+print("Bienvenido a mi aplicacion")                                   
