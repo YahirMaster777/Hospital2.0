@@ -1,8 +1,6 @@
 from fastapi import FastAPI
-from routes.persona import persona
+from routes.persona import persona_router
 
 app = FastAPI()
-app.include_router(persona)
-    
 
-print("Bienvenido a mi aplicacion")                                   
+app.include_router(persona_router, prefix="/api")
